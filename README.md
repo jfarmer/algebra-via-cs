@@ -333,7 +333,6 @@ These are just names that describe bundles of properties. A group is a monoid wi
 
 Both `(integers, +)` and `(strings, .)` are infinite, but that need not be the case.
 
-
 ### Booleans
 
 Consider `(booleans, &&)` where `booleans` is the two-instance type `{true, false}` and `&&` is the logical AND operator.
@@ -357,8 +356,6 @@ addModN(x, y) = (x + y) % N
 then `(integers, addModN)` is a group. Replace `N` with any number — `2`, `7`, `12`, `146`, etc. — and you'll get a group.
 
 ### Sets
-
-
 
 [wiki-rubber-duck-debugging]: https://en.wikipedia.org/wiki/Rubber_duck_debugging
 [wiki-string-concatenation-compare]: https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(strings)#Concatenation
