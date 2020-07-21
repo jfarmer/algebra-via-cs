@@ -214,7 +214,7 @@ Here's the full proof, which so short that it might feel like a trick. Recall `P
 
 ```text
 e = e + 0     (by P1, substituting in e for x)
-  = e         (by P4, substituting in 0 for x)
+  = 0         (by P4, substituting in 0 for x)
 ```
 
 Think about the juxtaposition of our intuition vs. the formal approach above.
