@@ -6,6 +6,31 @@ Being able to do these things is essential, but they don't tell us what numbers 
 
 Exploring questions like this form the basis of **abstract algebra**.
 
+## Contents <!-- omit in toc -->
+
+- [Intuition vs. Formalism](#Intuition-vs-Formalism)
+- [What Should Numbers Be](#What-Should-Numbers-Be)
+  - [Numbers vs. Strings](#Numbers-vs-Strings)
+  - [Notation For Addition And Concatenation](#Notation-For-Addition-And-Concatenation)
+  - [Terminology](#Terminology)
+  - [Play With Integers And Addition](#Play-With-Integers-And-Addition)
+  - [Find Some Properties](#Find-Some-Properties)
+- [Properties of Numbers](#Properties-of-Numbers)
+  - [Commutativity](#Commutativity)
+  - [Identity / Neutral Element / No-op](#Identity--Neutral-Element--No-op)
+  - [Identity is Unique](#Identity-is-Unique)
+  - [Inverses](#Inverses)
+  - [Inverses Are Unique...Or Are They](#Inverses-Are-UniqueOr-Are-They)
+  - [Associativity](#Associativity)
+    - [Associativity And Parallel Computing](#Associativity-And-Parallel-Computing)
+- [Taking Stock](#Taking-Stock)
+- [Other Examples](#Other-Examples)
+  - [Booleans](#Booleans)
+  - [Integers Modulo N](#Integers-Modulo-N)
+  - [Sets](#Sets)
+  - [Functions](#Functions)
+- [Monoids And Folding](#Monoids-And-Folding)
+
 ## Intuition vs. Formalism
 
 We have some intuitive idea of what numbers are, which is how we can say things like "5 is a number", "2 + 4 is 7", etc. and feel confident we're making sense.
@@ -121,7 +146,7 @@ Write the following:
 
 What properties hold for `(integers, +)` but not for `(strings, .)`? What patterns do you notice? Are there specific numbers or strings that behave in a special way with respect to each operation? How many ways can we write an expression without changing its value? What role do parentheses play?
 
-## Properties
+## Properties of Numbers
 
 > **Teacher's Note**
 > At this point, students would break into groups and try to find some interesting properties on their own. You'd reconvene 10-20 minutes later as a group to discuss. You'd then point them to some of the more "traditional" properties.
@@ -357,6 +382,50 @@ then `(integers, addModN)` is a group. Replace `N` with any number — `2`, `7`,
 
 ### Sets
 
+Sets are unordered collections of unique objects. For example `{Red, Green, Blue}` is a set consisting of three colors. The things contained in a set are called *elements* and something is either contained in a set or not, there's no sense of being the "first" thing in the set or the "second" thing. Similarly, an element can't be in a set twice: it's either part of the set or not.
+
+In JavaScript, there's a `Set` class that implements this. [Python has sets][python-set] and [Ruby has sets][ruby-set], too.
+
+Combining two sets is called taking the [union][wiki-union] of the two sets.
+
+`(sets, union)` is a commutative monoid where the [empty set][wiki-empty-set] (denoted `{}` or ∅) acts as the identity element.
+
+### Functions
+
+Functions from a set into itself form a monoid with respect to function composition. The identity function acts as the identity element.
+
+## Monoids And Folding
+
+Monoids are closely related to the [fold operation][wiki-fold] (sometimes called *reduce* or *inject*).
+
+In JavaScript, we can use `reduce` on arrays. The following code sums all the numbers in the array:
+
+```js
+[10, 40, 50].reduce((x, y) => x + y, 0);
+```
+
+In general, fold looks like:
+
+```text
+fold(list, operation, identity)
+```
+
+Let's say `list` contains elements of type `S`. `fold` only makes sense when `(S, operation)` is a monoid and `identity` is its identity element.
+
+For example,
+
+```text
+// sum of every number in list
+fold(listOfNumbers, add, 0)
+
+// product of every number in list
+fold(listOfNumbers, multiply, 1)
+
+// concatenation of every string in list
+fold(listOfStrings, concat, '')
+```
+
+
 [wiki-rubber-duck-debugging]: https://en.wikipedia.org/wiki/Rubber_duck_debugging
 [wiki-string-concatenation-compare]: https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(strings)#Concatenation
 [wiki-gpu]: https://en.wikipedia.org/wiki/Graphics_processing_unit
@@ -365,3 +434,8 @@ then `(integers, addModN)` is a group. Replace `N` with any number — `2`, `7`,
 [wiki-abelian-group]: https://en.wikipedia.org/wiki/Abelian_group
 [wiki-niels-abel]: https://en.wikipedia.org/wiki/Niels_Henrik_Abel
 [wiki-monoid]: https://en.wikipedia.org/wiki/Monoid
+[python-set]: https://docs.python.org/3/tutorial/datastructures.html#sets
+[ruby-set]: https://ruby-doc.org/stdlib-2.7.1/libdoc/set/rdoc/Set.html
+[wiki-union]: https://en.wikipedia.org/wiki/Union_(set_theory)
+[wiki-empty-set]: https://en.wikipedia.org/wiki/Empty_set
+[wiki-fold]: https://en.wikipedia.org/wiki/Fold_(higher-order_function)
