@@ -12,7 +12,7 @@ We have some intuitive idea of what numbers are, which is how we can say things 
 
 This still makes them pretty slippery. How do we know that we can add *any* pair of numbers? How do we know that every integer is either even or odd? A big part of "doing math" is making our intuitions precise enough that we can reason about them with 100% confidence.
 
-This is also how most mathematical definitions come about. They're the definitions that seem to fit our intuitions best. Once the definitions precise enough, we can see what conclusions follow if we adopt them.
+This is also how most mathematical definitions come about. They're the definitions that seem to fit our intuitions best. Once the definitions are precise enough, we can see what conclusions follow if we adopt them.
 
 A counterintuitive conclusion is like a bug in software. When something unexpected happens in software, a combination of two things is happening:
 
