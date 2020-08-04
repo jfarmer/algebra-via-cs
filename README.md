@@ -8,7 +8,7 @@ What are numbers? I'm sure you can name many numbers. I'm also sure you know at 
 
 Being able to do these things is essential, but they don't tell us what numbers *are*. What distinguishes numbers from functions or strings or any other object that we wouldn't consider a number? After all, we can name and combine strings and functions, too.
 
-Exploring questions like this form the basis of **abstract algebra**. We'll be using familiar objects in code — numbers and strings, at first — to explore the question "What makes numbers, well, *numberse*?"
+Exploring questions like this form the basis of **abstract algebra**. We'll be using familiar objects in code — numbers and strings, at first — to explore the question "What makes numbers, well, *numbers*?"
 
 ## Contents <!-- omit in toc -->
 
