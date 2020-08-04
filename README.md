@@ -283,7 +283,7 @@ The following are all true statements (via substitution):
   e = e + 0
 ```
 
-Here's the full proof, which so short that it might feel like a trick. Recall `P1` - `P4` from above:
+Here's the full proof, which is so short that it might feel like a trick. Recall `P1` - `P4` from above:
 
 ```text
 e = e + 0     (by P1, substituting in e for x)
