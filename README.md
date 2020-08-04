@@ -1,3 +1,7 @@
+---
+permalink: "/index.html"
+---
+
 # Abstract Algebra via CS
 
 What are numbers? I'm sure you can name many numbers. I'm also sure you know at least a handful of ways to combine numbers (addition, multiplication, etc.).
