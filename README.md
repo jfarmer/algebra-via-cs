@@ -8,6 +8,9 @@ Exploring questions like this form the basis of **abstract algebra**.
 
 ## Contents <!-- omit in toc -->
 
+- [Abstract Algebra](#Abstract-Algebra)
+  - [Examples Of Other Number Systems](#Examples-Of-Other-Number-Systems)
+  - [Abstract Algebra In Computer Science](#Abstract-Algebra-In-Computer-Science)
 - [Intuition vs. Formalism](#Intuition-vs-Formalism)
 - [What Should Numbers Be](#What-Should-Numbers-Be)
   - [Numbers vs. Strings](#Numbers-vs-Strings)
@@ -30,6 +33,47 @@ Exploring questions like this form the basis of **abstract algebra**.
   - [Sets](#Sets)
   - [Functions](#Functions)
 - [Monoids And Folding](#Monoids-And-Folding)
+
+## Abstract Algebra
+
+Abstract algebra is to high school algebra as high school algebra is to arithmetic.
+
+With arithmetic, we look at specific numbers and learn how to add, subtract, multiple, and divide specific numbers. With algebra, we introduce the concept of variables and equations. Rather than asking "What is 199 plus 456?" we might ask "What number when multiplied by 2 gives us 456?"
+
+That is, with algebra, we start asking about *arbitrary* numbers and use symbols like `x` and `y` to stand in for "any number in particular" or "some number with a specific property."
+
+For example, when "solving" an equation like
+
+```text
+x^2 + x - 1 = 0
+```
+
+What we're really asking is, "If we know that `x` is a number and `x^2 + x - 1 = 0` then what can we say about `x`? Is there only one number `x` with that property? Two? Nineteen? None?"
+
+"Regular" algebra takes us from looking at specific numbers to looking at a specific *number system*. Abstract algebra takes us from looking at a specific *number system* to looking at *number systems* in general.
+
+### Examples Of Other Number Systems
+
+We are taught other number systems throughout school, but it's never pointed out to us. For example, we can add, subtract, multiply, and [even divide][wiki-poynomial-division] polynomials. If it adds like a number and divides like a number, is it a number?
+
+We can add, subtract, and multiply [matrixes][wiki-matrix], but we can only "divide" them under certain cirsumstances. So, they're...almost numbers? Maybe?
+
+The question "What is a number?" is at the heart of abstract algebra. As we'll come to see, what matters is what we can *do* with a collection of objects. What operations can we perform on them? What rules do they obey?
+
+We wind up categorizing different number systems by the operations they permit. The objects and their operations go hand-in-hand and can only be understood together.
+
+### Abstract Algebra In Computer Science
+
+Sub-fields of computer science that involve abstract algebra:
+
+- Automata like [regular expressions][wiki-regular-expressions]
+- [Cryptogrpahy][wiki-cryptography] makes heavy use of abstract algebra, e.g., [elliptic curve cryptography][wiki-elliptic-curve-cryptography] involves defining a number system via an operation on geometric curves
+- [Error correcting codes][wiki-error-correcting-codes] are how computers can reliably transmit data across noisy channels (like telephone lines, wireless networks, etc.) and is based on abstract algebra
+- [Linear programming][wiki-linear-programming] is a common optimization technique based in abstrat algebra
+- [Linear algebra][wiki-linear-algebra] is a subset of abstract algebra and plays a huge role in machine learning, computer graphics, and many other sub-fields of computer science.
+- ...and much, much more!
+
+Most computer science students aren't exposed to the shared abstractions that underly all these fields, but you can get started right here and now! Let's dive in.
 
 ## Intuition vs. Formalism
 
@@ -439,3 +483,11 @@ fold(listOfStrings, concat, '')
 [wiki-union]: https://en.wikipedia.org/wiki/Union_(set_theory)
 [wiki-empty-set]: https://en.wikipedia.org/wiki/Empty_set
 [wiki-fold]: https://en.wikipedia.org/wiki/Fold_(higher-order_function)
+[wiki-matrix]: https://en.wikipedia.org/wiki/Matrix_(mathematics)
+[wiki-poynomial-division]: https://en.wikipedia.org/wiki/Polynomial_long_division
+[wiki-regular-expressions]: https://en.wikipedia.org/wiki/Regular_expression
+[wiki-cryptography]: https://en.wikipedia.org/wiki/Cryptography
+[wiki-elliptic-curve-cryptography]: https://en.wikipedia.org/wiki/Elliptic-curve_cryptography
+[wiki-error-correcting-codes]: https://en.wikipedia.org/wiki/Error_correction_code
+[wiki-linear-algebra]: https://en.wikipedia.org/wiki/Linear_algebra
+[wiki-linear-programming]: https://en.wikipedia.org/wiki/Linear_programming
