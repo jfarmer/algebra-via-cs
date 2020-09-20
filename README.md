@@ -42,7 +42,7 @@ Exploring questions like this form the basis of **abstract algebra**. We'll be u
 
 Abstract algebra is to high school algebra as high school algebra is to arithmetic.
 
-With arithmetic, we look at specific numbers and learn how to add, subtract, multiple, and divide specific numbers. With algebra, we introduce the concept of variables and equations. Rather than asking "What is 199 plus 456?" we might ask "What number when multiplied by 2 gives us 456?"
+With arithmetic, we look at specific numbers and learn how to add, subtract, multiply, and divide specific numbers. With algebra, we introduce the concept of variables and equations. Rather than asking "What is 199 plus 456?" we might ask "What number when multiplied by 2 gives us 456?"
 
 That is, with algebra, we start asking about *arbitrary* numbers and use symbols like `x` and `y` to stand in for "any number in particular" or "some number with a specific property."
 
@@ -54,7 +54,11 @@ x^2 + x - 1 = 0
 
 What we're really asking is, "If we know that `x` is a number and `x^2 + x - 1 = 0` then what can we say about `x`? Is there only one number `x` with that property? Two? Nineteen? None?"
 
-"Regular" algebra takes us from looking at specific numbers to looking at a specific *number system*. Abstract algebra takes us from looking at a specific *number system* to looking at *number systems* in general.
+Arithmetic focuses our attention on particular numbers.
+
+"Regular" algebra focuses our attention on the particular operations we perform on numbers. We go from particular numbers to a particular *number system*.
+
+Abstract algebra focuses our attention on number systems *in general*.
 
 ### Examples Of Other Number Systems
 
@@ -64,7 +68,7 @@ We can add, subtract, and multiply [matrixes][wiki-matrix], but we can only "div
 
 The question "What is a number?" is at the heart of abstract algebra. As we'll come to see, what matters is what we can *do* with a collection of objects. What operations can we perform on them? What rules do they obey?
 
-We wind up categorizing different number systems by the operations they permit. The objects and their operations go hand-in-hand and can only be understood together.
+We wind up categorizing different number systems through the operations they permit. The objects and their operations go hand-in-hand and can only be understood together.
 
 ### Abstract Algebra In Computer Science
 
@@ -100,7 +104,7 @@ This dance between our intuition and formalism is how all new mathematics comes 
 
 ## What Should Numbers Be
 
-To learn what makes numbers *numbers*, let's compare them to things we consider not-numbers. What properties do our intuitive concept of numbers have that these not-numbers lack, or vice versa? Once we have a property, are there things we'd intuitively call not-numbers that also have these properties?
+To learn what makes numbers *numbers*, let's compare them to things we (intuitively) consider not-numbers. What properties do our intuitive concept of numbers have that these not-numbers lack, or vice versa? Once we have a property, are there things we'd intuitively call not-numbers that also have these properties?
 
 Our goal is to explore this "property space" by holding up our intuitive idea of numbers against objects we consider not-numbers. As we explore, we'll keep track of what distinguishes numbers from not-numbers with an eye towards isolating the properties that best encapsulate our intuitive concept of "number".
 
@@ -111,7 +115,7 @@ We start with two intuitive beliefs:
 
 ### Numbers vs. Strings
 
-To start, let's start with a simplified instance to see what we can learn. Instead of "numbers in general", let's look at the integers. And instead of talking about "combining numbers in general", let's look at addition.
+To make things a little easier, let's start by looking at the integers rather than looking at "numbers in general". And instead of talking about "combining numbers in general", let's look at addition.
 
 For not-numbers, let's look at strings and string concatenation.
 
@@ -320,6 +324,8 @@ In some ways that reasoning is backwards. If we know that `5 + y = 0` we're *onl
 
 As with `0`, the (unproven) uniqueness of inverses *justifies* the notation `-5`.  What "is" `-5`? It's the unique number `y` such that `5 + y = 0`.
 
+**Reflect**: Step back and reflect on the above statement for a second. What `-5` **is** is defined in terms of its relationship to other numbers via addition. The operation is what d
+
 Let's try and prove that the following that `5` has at most one additive inverse. Formally: if `5 + y = 0` and `5 + z = 0` then `y = z`.
 
 ```text
@@ -495,3 +501,4 @@ fold(listOfStrings, concat, '')
 [wiki-error-correcting-codes]: https://en.wikipedia.org/wiki/Error_correction_code
 [wiki-linear-algebra]: https://en.wikipedia.org/wiki/Linear_algebra
 [wiki-linear-programming]: https://en.wikipedia.org/wiki/Linear_programming
+[wiki-riemann-integral]: https://en.wikipedia.org/wiki/Riemann_integral
