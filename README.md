@@ -147,7 +147,7 @@ We have two types of objects each with their own operation: integers with additi
 
 ### Play With Integers And Addition
 
-The goal is to find some interesting properties that distinguish `(integers, +)` and `(strings, ,)` in the hopes that we learn something about number-ness. Before we try to compare the two, let's play around with just `(integers, +)`.
+The goal is to find some interesting properties that distinguish `(integers, +)` and `(strings, .)` in the hopes that we learn something about number-ness. Before we try to compare the two, let's play around with just `(integers, +)`.
 
 Write down a few dozen statements involving integer addition. Use only integers, the `+` symbol, the `=` symbol, and parentheses. You can use variable names to stand in for integers if you like or only write down literal integers.
 
