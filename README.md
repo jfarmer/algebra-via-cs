@@ -306,7 +306,7 @@ In other words, a `(type, op)` pair might not have an identity element, but if i
 
 ### Inverses
 
-We can "undo" addition, but we can't "undo" string concatenation. If we add `4` we can undo it by adding `-4`. If we add `12376` we can undo it by adding `12376`. If we add `-9426` we can undo it by adding `9426`.
+We can "undo" addition, but we can't "undo" string concatenation. If we add `4` we can undo it by adding `-4`. If we add `12376` we can undo it by adding `-12376`. If we add `-9426` we can undo it by adding `9426`.
 
 This works because for every number `x` we can find another number `y` such that `x + y = 0`. We call `y` the **additive inverse** of `x` or the **inverse of `x` with respect to `+`**.
 
@@ -324,9 +324,14 @@ In some ways that reasoning is backwards. If we know that `5 + y = 0` we're *onl
 
 As with `0`, the (unproven) uniqueness of inverses *justifies* the notation `-5`.  What "is" `-5`? It's the unique number `y` such that `5 + y = 0`.
 
-**Reflect**: Step back and reflect on the above statement for a second. What `-5` **is** is defined in terms of its relationship to other numbers via addition. The operation is what d
+**Reflect**: Step back and reflect on the above statement for a second. What `-5` **is** is defined in terms of its relationship to other numbers via addition.
 
-Let's try and prove that the following that `5` has at most one additive inverse. Formally: if `5 + y = 0` and `5 + z = 0` then `y = z`.
+Let's try and that the number `5` as at most one additive inverse. That is, if:
+
+1. `5 + y = 0` **and** `5 + z = 0` **then**
+1. `y = z`
+
+Here we go:
 
 ```text
 1.  y = y + 0           (0 is the additive identity)
@@ -354,7 +359,7 @@ This property justifies the notation `10 + 20 + 30`. When we write `10 + 20 + 30
 
 ```text
 10 + (20 + 30) = 10 + 50 = 60
-(10 + 20) + 30 = 30 + 30 = 50
+(10 + 20) + 30 = 30 + 30 = 60
 ```
 
 `(strings, .)` is also associative:
