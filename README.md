@@ -443,7 +443,7 @@ then `(integers, addModN)` is a group. Replace `N` with any number — `2`, `7`,
 
 Sets are unordered collections of unique objects. For example `{Red, Green, Blue}` is a set consisting of three colors. The things contained in a set are called *elements* and something is either contained in a set or not, there's no sense of being the "first" thing in the set or the "second" thing. Similarly, an element can't be in a set twice: it's either part of the set or not.
 
-In JavaScript, there's a `Set` class that implements this. [Python has sets][python-set] and [Ruby has sets][ruby-set], too.
+In JavaScript, there's a `Set` class that implements this. See [MDN's Set documentation][javascript-set]. [Python has sets][python-set] and [Ruby has sets][ruby-set], too.
 
 Combining two sets is called taking the [union][wiki-union] of the two sets.
 
@@ -493,6 +493,7 @@ fold(listOfStrings, concat, '')
 [wiki-abelian-group]: https://en.wikipedia.org/wiki/Abelian_group
 [wiki-niels-abel]: https://en.wikipedia.org/wiki/Niels_Henrik_Abel
 [wiki-monoid]: https://en.wikipedia.org/wiki/Monoid
+[javascript-set]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
 [python-set]: https://docs.python.org/3/tutorial/datastructures.html#sets
 [ruby-set]: https://ruby-doc.org/stdlib-2.7.1/libdoc/set/rdoc/Set.html
 [wiki-union]: https://en.wikipedia.org/wiki/Union_(set_theory)
