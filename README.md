@@ -85,7 +85,7 @@ Most computer science students aren't exposed to the shared abstractions that un
 
 ## Intuition vs. Formalism
 
-We have some intuitive idea of what numbers are, which is how we can say things like "5 is a number", "2 + 4 is 7", etc. and feel confident we're making sense.
+We have some intuitive idea of what numbers are, which is how we can say things like "5 is a number", "3 + 4 is 7", etc. and feel confident we're making sense.
 
 This still makes them pretty slippery. How do we know that we can add *any* pair of numbers? How do we know that every integer is either even or odd? A big part of "doing math" is making our intuitions precise enough that we can reason about them with 100% confidence.
 
